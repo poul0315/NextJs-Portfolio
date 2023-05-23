@@ -1,0 +1,12 @@
+#logo {
+    color: var(--theme-color);
+    margin-top: 4px;
+    margin-left: 4px;
+    height: 100%;
+    width: 100%;
+    fill: none;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        color: white;
+    }
+}
