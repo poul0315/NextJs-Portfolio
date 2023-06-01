@@ -15,14 +15,16 @@ nav {
                 align-items: center;
                 height: 3rem;
                 margin: 2rem 0;
-                width: 3rem;
+                width: 6rem;
                 fill: none;
+                font-family: var(--roboto);
                 color: var(--theme-color);
+                font-size: var(--tlarge);
                 cursor: pointer;
-                outline: 2px dashed transparent;
+                text-decoration: none;
                 transition: 0.3s ease-in-out;
                 &:hover {
-                    color: white;
+                    color: var(--lightest-slate);
                 }
                 &:focus {
                     outline-color: var(--theme-color);

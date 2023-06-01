@@ -1,12 +1,13 @@
 #logo {
-    color: var(--theme-color);
+    color: white;
     margin-top: 4px;
-    margin-left: 4px;
+    margin-left: 8px;
     height: 100%;
     width: 100%;
     fill: none;
+    text-decoration: none;;
     transition: 0.3s ease-in-out;
     &:hover {
-        color: white;
+        color: var(--lightest-slate);
     }
 }
