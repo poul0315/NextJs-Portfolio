@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function About() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <Image 
                 src="/profile-picture.png" 
                 className="hero-profile-image"
