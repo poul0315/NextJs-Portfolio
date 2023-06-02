@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '@/sections/Navbar'
 import Hero from '@/sections/Hero'
+import About from '@/sections/About'
 import SocialIcons from '@/components/SocialIcons'
 import Email from '@/components/Email'
 
@@ -9,6 +10,7 @@ function Index() {
     <div className="app">
       <Navbar />
       <Hero />
+      <About />
       <SocialIcons />
       <Email />
     </div>

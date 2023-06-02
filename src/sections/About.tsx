@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-function Hero() {
+function About() {
     return (
-        <div className="hero">
+        <div className="about">
             <Image 
                 src="/profile-picture.png" 
                 className="hero-profile-image"
@@ -30,4 +30,4 @@ function Hero() {
     )
 }
 
-export default Hero;
+export default About;
