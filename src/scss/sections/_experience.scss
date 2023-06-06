@@ -1,0 +1,26 @@
+.experience {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    // min-height: 60vh;
+    margin: 0 40rem;
+    margin-top: 35rem;
+    &-profile-image {
+        border-radius: 50%;
+    }
+    &-title {
+        font-size: var(--tlarge2);
+    }
+    &-title-large {
+        font-size: var(--tx2large);
+    }
+    &-title-sub {
+        font-size: var(--tlarge2);
+    }
+    &-text {
+        line-height: 1.5rem;
+    }
+}
