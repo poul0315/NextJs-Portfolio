@@ -11,10 +11,12 @@ function Index() {
   return (
     <div className="app">
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Project />
+      <div className="main-component">
+        <Hero />
+        <About />
+        <Experience />
+        <Project />
+      </div>
       <SocialIcons />
       <Email />
     </div>
