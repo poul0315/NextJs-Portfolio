@@ -22,7 +22,7 @@ function Experience() {
             role: "Electrical Design Engineer",
             url: "https://paccar.com/",
             positionDescription: [
-                "Collaborated with a senior engineer to develop a LabView test fixture program, referring to Python3 code.",
+                "PP Collaborated with a senior engineer to develop a LabView test fixture program, referring to Python3 code.",
                 "Designed test framework components, such as the user interface, process models, and step types.",
                 "Created test sequences within the established framework.",
                 "Troubleshot and resolved issues encountered during the execution of tests in a production environment."
@@ -47,7 +47,7 @@ function Experience() {
                             <span>{experience.name}</span>
                           </li>
                         );
-                    })};
+                    })}
                 </ul>
                 <div className="exp-details">
                     <div className="exp-details-position">
@@ -61,7 +61,13 @@ function Experience() {
                             </span>
                         </h3>
                         <ul className="exp-details-list">
-
+                            {experiences[selected].positionDescription.map(
+                                (description, index) => (
+                                    <li key={index} className="exp-details">
+                                        {description}
+                                    </li>
+                                )
+                            )}
                         </ul>
                     </div>
                 </div>

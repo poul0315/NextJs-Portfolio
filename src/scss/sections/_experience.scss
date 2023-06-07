@@ -1,26 +1,56 @@
 .experience {
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 700px;
+    // align-items: center;
     gap: 1rem;
-    justify-content: center;
+    // justify-content: center;
     // min-height: 60vh;
-    margin: 0 40rem;
-    margin-top: 35rem;
-    &-profile-image {
-        border-radius: 50%;
+    margin: 15rem auto;
+    // max-width: 700px;
+    // margin: 0 40rem;
+    // margin-top: 35rem;
+    .title {
+        font-family: var(--roboto);
+        position: relative;
+        h2 {
+            margin-bottom: 2rem;
+            font-size: var(--tx2large);
+            font-weight: 700;
+        }
     }
-    &-title {
-        font-size: var(--tlarge2);
-    }
-    &-title-large {
-        font-size: var(--tx2large);
-    }
-    &-title-sub {
-        font-size: var(--tlarge2);
-    }
-    &-text {
-        line-height: 1.5rem;
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        gap: 1rem;
+        .exp-slider {
+            list-style-type: none;
+            position: relative;
+            height: max-content;
+            .underline {
+                background-color: var(--theme-color);
+                position: absolute;
+                left: -0.5px;
+                top: 0;
+                height: 2.5rem;
+                width: 3px;
+                transition: 0.3s ease-in-out;
+            }
+            &::before {
+                position: absolute;
+                left: 0px;
+                content: "";
+                height: 100%;
+                width: 2px;
+                background-color: var(--lightest-navy);
+            }
+            &-item {
+                height: 2.5rem;
+                padding: 0 1.5rem;
+                display: flex;
+                vertical-align: middle;
+                cursor: pointer; // this makes indication that I clicked
+                width: 100%; 
+            }
+        }
     }
 }
