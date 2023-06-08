@@ -40,8 +40,9 @@ function Experience() {
                     <div className="underline"></div>
                     {experiences.map((experience, index) => {
                         return (
-                          <li key={index} className={`exp-slider-item ${
-                            index === selected && "exp-slider-item-selected"}`}
+                          <li key={index} className={
+                            `exp-slider-item ${index === selected && "exp-slider-item-selected"}`
+                            }
                             onClick={() => setSelected(index)}
                             >  
                             <span>{experience.name}</span>
@@ -55,14 +56,13 @@ function Experience() {
                             <span>{experiences[selected].role}</span>
                             <span className="exp-details-position-company">
                                 &nbsp;@&nbsp;
-                                <Link className="link" href={experiences[selected].url}>
+                                <Link className="link exp-details-position-company" href={experiences[selected].url}>
                                     {experiences[selected].name}{""}
                                 </Link>
                             </span>
                         </h3>
                         <ul className="exp-details-list">
-                            {experiences[selected].positionDescription.map(
-                                (description, index) => (
+                            {experiences[selected].positionDescription.map((description, index) => (
                                     <li key={index} className="exp-details">
                                         {description}
                                     </li>

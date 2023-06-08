@@ -60,12 +60,23 @@
                 &:hover {
                     background-color: white;
                     span {
-                        color: var(--theme-color);
+                        color: black;
                     }
                 }
             }
             &-item-selected {
                 span {
+                    color: var(--theme-color);
+                }
+            }
+        }
+        .exp-details {
+            margin-bottom: 1rem;
+            font-family: var(--roboto);
+            color: white;
+            &-position {
+                color: var(--lightest-slate);
+                &-company {
                     color: var(--theme-color);
                 }
             }
