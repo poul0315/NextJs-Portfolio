@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 function Experience() {
     const [selected, setSelected] = useState(0);
+
+    useEffect(() => {
+        const transformSelected = () => {
+            const underline = document.querySelector<HTMLElement>(".underline");
+            underline!.style.top = `${selected * 2.5}rem`;
+        };
+        transformSelected()
+    }, [selected])
 
     const experiences = [
         {

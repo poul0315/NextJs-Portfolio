@@ -71,13 +71,22 @@
             }
         }
         .exp-details {
-            margin-bottom: 1rem;
             font-family: var(--roboto);
             color: white;
             &-position {
                 color: var(--lightest-slate);
                 &-company {
                     color: var(--theme-color);
+                }
+            }
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+                padding-left: 30px;
+                &-item {
+                    position: relative;
                 }
             }
         }
