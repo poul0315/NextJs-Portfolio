@@ -16,6 +16,15 @@
             margin-bottom: 2rem;
             font-size: var(--tx2large);
             font-weight: 700;
+            &::after { // straight line next work experience title
+                content: "";
+                position: absolute;
+                top: 20px;
+                width: 350px;
+                background-color: white;
+                height: 2px;
+                margin-left: 40px; 
+            }
         }
     }
     .container {
