@@ -40,7 +40,7 @@
                 left: 0px;
                 content: "";
                 height: 100%;
-                width: 2px;
+                width: 1px;
                 background-color: var(--lightest-navy);
             }
             &-item {
@@ -50,6 +50,24 @@
                 vertical-align: middle;
                 cursor: pointer; // this makes indication that I clicked
                 width: 100%; 
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--slate);
+                    font-family: var(--roboto);
+                }
+                &:hover {
+                    background-color: white;
+                    span {
+                        color: var(--theme-color);
+                    }
+                }
+            }
+            &-item-selected {
+                span {
+                    color: var(--theme-color);
+                }
             }
         }
     }
