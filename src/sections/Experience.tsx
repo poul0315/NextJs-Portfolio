@@ -30,10 +30,10 @@ function Experience() {
             role: "Electrical Design Engineer",
             url: "https://paccar.com/",
             positionDescription: [
-                "PP Collaborated with a senior engineer to develop a LabView test fixture program, referring to Python3 code.",
-                "Designed test framework components, such as the user interface, process models, and step types.",
-                "Created test sequences within the established framework.",
-                "Troubleshot and resolved issues encountered during the execution of tests in a production environment."
+                "Conducted comprehensive reviews and seamlessly integrated systems for a range of heavy-duty trucks, ensuring optimal performance and functionality.",
+                "Utilized technical expertise to design bespoke electrical harness systems tailored to precise customer requirements, demonstrating a meticulous attention to detail.",
+                "Played a key role in supporting the design and integration of production line systems, facilitating streamlined and efficient manufacturing processes.",
+                "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
             ],
         }
     ];

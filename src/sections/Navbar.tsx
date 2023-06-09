@@ -30,7 +30,7 @@ function Navbar() {
                                         to={link}
                                         spy={true}
                                         smooth={true}
-                                        offset={0}
+                                        offset={-300}
                                         duration={700}
                                         className="nav-items-list-item-link"
                                     >
