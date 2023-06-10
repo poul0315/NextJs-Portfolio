@@ -31,21 +31,21 @@ function Project() {
     ];
 
     return (
-        <div className="propject" id="project">
+        <div className="project" id="project">
             <div className="title">
                 <h2>Project</h2>
             </div>
-            <div className="container">
+            <div className="project-container">
                 <ul className="exp-slider">
                     <div className="underline"></div>
-                    {projects.map((experience, index) => {
+                    {projects.map((project, index) => {
                         return (
                           <li key={index} className={
                             `exp-slider-item ${index === selected && "exp-slider-item-selected"}`
                             }
                             onClick={() => setSelected(index)}
                             >  
-                            <span>{experience.name}</span>
+                            <span>{project.name}</span>
                           </li>
                         );
                     })}
@@ -74,7 +74,7 @@ function Project() {
             </div>
         </div>
 
-    )
+    );
 }
 
 export default Project;
