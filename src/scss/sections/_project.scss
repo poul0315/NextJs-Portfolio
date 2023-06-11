@@ -20,22 +20,56 @@
                 margin-left: 40px; 
         }
     }
+    @media screen and (max-width: 1200px) {
+      h2 {
+          margin-bottom: 2rem;
+          margin-left: 5rem;
+          font-size: var(--tx2large);
+          font-weight: 700;
+          &::after { // straight line next work experience title
+              content: "";
+              position: absolute;
+              top: 20px;
+              width: 50%;
+              background-color: white;
+              height: 2px;
+              margin-left: 40px; 
+          }
+      }
+    }
     @media screen and (max-width: 700px) {
         h2 {
             margin-bottom: 2rem;
-            margin-left: 1rem;
+            margin-left: 2rem;
             font-size: var(--tx2large);
             font-weight: 700;
             &::after { // straight line next work experience title
                 content: "";
                 position: absolute;
                 top: 20px;
-                width: 30%;
+                width: 50%;
                 background-color: white;
                 height: 2px;
                 margin-left: 40px; 
             }
         }
+    }
+    @media screen and (max-width: 500px) {
+      h2 {
+          margin-bottom: 2rem;
+          margin-left: 1rem;
+          font-size: var(--tx2large);
+          font-weight: 700;
+          &::after { // straight line next work experience title
+              content: "";
+              position: absolute;
+              top: 20px;
+              width: 50%;
+              background-color: white;
+              height: 2px;
+              margin-left: 40px; 
+          }
+      }
     }
     @media screen and (max-width: 450px) {
         h2 {
@@ -47,7 +81,7 @@
                 content: "";
                 position: absolute;
                 top: 20px;
-                width: 15%;
+                width: 50%;
                 background-color: white;
                 height: 2px;
                 margin-left: 40px; 
