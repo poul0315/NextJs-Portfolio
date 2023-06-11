@@ -69,24 +69,44 @@ function Navbar() {
         //         </div>
         //     </div>
         // </nav>
+        
         <header id="navbar">
             <nav className="navbar-container container">
                 <a href="/" className="home-link">
-                <div className="navbar-logo"></div>
-                Website Name
+                    {/* <div className="navbar-logo"></div> */}
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+                        Website Name
+                    </Link>
                 </a>
                 <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
                 </button>
                 <div id="navbar-menu" aria-labelledby="navbar-toggle">
-                <ul className="navbar-links">
-                    <li className="navbar-item"><a className="navbar-link" href="/about">About</a></li>
-                    <li className="navbar-item"><a className="navbar-link" href="/blog">Blog</a></li>
-                    <li className="navbar-item"><a className="navbar-link" href="/careers">Careers</a></li>
-                    <li className="navbar-item"><a className="navbar-link" href="/contact">Contact</a></li>
-                </ul>
+                    <ul className="navbar-links">
+                        {
+                            sectionLinks.map(({ name, link }) => (
+                                <li key={name} className="navbar-item">
+                                    <Link 
+                                        activeClass="active"
+                                        to={link}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-300}
+                                        duration={700}
+                                        className="navbar-link"
+                                    >
+                                        {name}
+                                    </Link>
+                                </li>
+                            ))
+                        // <li className="navbar-item"><a className="navbar-link" href="/about">About</a></li>
+                        // <li className="navbar-item"><a className="navbar-link" href="/blog">Blog</a></li>
+                        // <li className="navbar-item"><a className="navbar-link" href="/careers">Careers</a></li>
+                        // <li className="navbar-item"><a className="navbar-link" href="/contact">Contact</a></li>
+                        }
+                    </ul>
                 </div>
             </nav>
         </header>
