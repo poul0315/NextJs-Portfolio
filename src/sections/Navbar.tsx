@@ -32,8 +32,6 @@ function Navbar() {
         { name: "About", link: "about" },
         { name: "Experience", link: "experience" },
         { name: "Project", link: "project" },
-        { name: "Contact", link: "contact" },
-        // { name: "Resume", link: "resume" },
     ];
 
     return (
