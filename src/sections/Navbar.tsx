@@ -33,6 +33,7 @@ function Navbar() {
         { name: "Experience", link: "experience" },
         { name: "Project", link: "project" },
         { name: "Contact", link: "contact" },
+        // { name: "Resume", link: "resume" },
     ];
 
     return (
@@ -104,6 +105,7 @@ function Navbar() {
                                     </li>
                                 ))
                             }
+                            <a className="navbar-link resume-link" target="_blank" href="./resume.pdf">Resume</a>
                     </ul>
                 </div>
             </nav>

@@ -99,9 +99,9 @@
     margin-right: auto;
   }
   #navbar {
-    --navbar-height: 64px;
-    // max-width: 1000px;
     position: fixed;
+    z-index: 1; // make every component under navbar
+    --navbar-height: 64px;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     left: 0;
