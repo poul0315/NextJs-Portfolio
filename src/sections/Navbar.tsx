@@ -40,9 +40,9 @@ function Navbar() {
         <header id="navbar">
             <nav className="navbar-container container">
                 {/* <a href="/" className="home-link"> */}
-                    {/* <div className="navbar-logo"></div> */}
-                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} className="home-link">
-                        Website Name
+                    <Link activeClass="active" to="hero" spy={true} smooth={true} offset={-100} duration={500} className="home-link">
+                        <div className="navbar-logo"></div>
+                        Paul Nam
                     </Link>
                 {/* </a> */}
                 <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
