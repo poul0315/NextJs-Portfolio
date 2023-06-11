@@ -100,11 +100,13 @@
   }
   #navbar {
     --navbar-height: 64px;
+    // max-width: 1000px;
     position: fixed;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     left: 0;
     right: 0;
+    top: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   }
   .navbar-container {
@@ -198,7 +200,7 @@
     opacity: 1;
     visibility: visible;
   }
-  .navbar-links {
+  .navbar-linkss {
     list-style: none;
     position: absolute;
     background-color: var(--navbar-bg-color);
@@ -208,13 +210,13 @@
     left: 0;
     right: 0;
     margin: 1.4rem;
-    border-radius: 5px;
+    // border-radius: 5px; //this caused border rounder when about is clicked
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
   
-  #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
-    padding: 1em;
-  }
+  // #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-linkss {
+  //   padding: 1em;
+  // }
   @media screen and (min-width: 700px) {
     #navbar-toggle,
     #navbar-toggle[aria-expanded="true"] {
@@ -230,8 +232,8 @@
       height: 100%;
     }
   
-    .navbar-links,
-    #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
+    .navbar-linkss,
+    #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-linkss {
       margin: 0;
       padding: 0;
       box-shadow: none;

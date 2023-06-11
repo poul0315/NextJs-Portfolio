@@ -36,6 +36,7 @@ function Navbar() {
     ];
 
     return (
+        // <header>
         // <nav>
         //     <div className="wrapper">
         //         {/* <div className="brand">
@@ -44,68 +45,65 @@ function Navbar() {
         //             </Link>
         //         </div> */}
         //         <div className="nav-items">
-        //             <ul className="nav-items-list">
-        //                 {
-        //                     sectionLinks.map(({ name, link }) => (
-        //                         <li key={name} className="nav-items-list-item">
-        //                             <Link 
-        //                                 activeClass="active"
-        //                                 to={link}
-        //                                 spy={true}
-        //                                 smooth={true}
-        //                                 offset={-300}
-        //                                 duration={700}
-        //                                 className="nav-items-list-item-link"
-        //                             >
-        //                                 {name}
-        //                             </Link>
-        //                         </li>
-        //                     ))
-        //                 }
-        //             </ul>
+                    // <ul className="nav-items-list">
+                    //     {
+                    //         sectionLinks.map(({ name, link }) => (
+                    //             <li key={name} className="nav-items-list-item">
+                    //                 <Link 
+                    //                     activeClass="active"
+                    //                     to={link}
+                    //                     spy={true}
+                    //                     smooth={true}
+                    //                     offset={-300}
+                    //                     duration={700}
+                    //                     className="nav-items-list-item-link"
+                    //                 >
+                    //                     {name}
+                    //                 </Link>
+                    //             </li>
+                    //         ))
+                    //     }
+                    // </ul>
         //             <div className="nav-items-button">
         //                 <Button text="Resume" link="http://localhost:3000/resume.pdf" />
         //             </div>
         //         </div>
         //     </div>
         // </nav>
+        // </header>
         
         <header id="navbar">
             <nav className="navbar-container container">
-                <a href="/" className="home-link">
+                {/* <a href="/" className="home-link"> */}
                     {/* <div className="navbar-logo"></div> */}
-                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} className="home-link">
                         Website Name
                     </Link>
-                </a>
+                {/* </a> */}
                 <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
                 <div id="navbar-menu" aria-labelledby="navbar-toggle">
-                    <ul className="navbar-links">
-                        {
-                            sectionLinks.map(({ name, link }) => (
-                                <li key={name} className="navbar-item">
-                                    <Link 
-                                        activeClass="active"
-                                        to={link}
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-300}
-                                        duration={700}
-                                        className="navbar-link"
-                                    >
-                                        {name}
-                                    </Link>
-                                </li>
-                            ))
-                        // <li className="navbar-item"><a className="navbar-link" href="/about">About</a></li>
-                        // <li className="navbar-item"><a className="navbar-link" href="/blog">Blog</a></li>
-                        // <li className="navbar-item"><a className="navbar-link" href="/careers">Careers</a></li>
-                        // <li className="navbar-item"><a className="navbar-link" href="/contact">Contact</a></li>
-                        }
+                    <ul className="navbar-linkss">
+                            {
+                                sectionLinks.map(({ name, link }) => (
+                                    <li key={name} className="navbar-item">
+                                        <Link 
+                                            activeClass="active"
+                                            to={link}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-300}
+                                            duration={700}
+                                            className="navbar-link"
+                                        >
+                                            {name}
+                                        </Link>
+                                    </li>
+                                ))
+                            }
                     </ul>
                 </div>
             </nav>

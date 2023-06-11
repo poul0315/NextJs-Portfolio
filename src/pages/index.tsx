@@ -10,7 +10,9 @@ import Email from '@/components/Email'
 function Index() {
   return (
     <div className="app">
-      <Navbar />
+      <div className="navbar">
+        <Navbar />
+      </div>
       <div className="main-component">
         <Hero />
         <About />
