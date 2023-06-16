@@ -11,7 +11,7 @@ function Project() {
           projectName: "Caption2Emoji",
           projectLink: "https://netlify.com",
           projectDescription:
-            "This is a web application that uses the PokeAPI to display information about different Pokemon, including their evolution levels and details. You can compare multiple Pokemon using a queue, and add them to your personal list using Firebase's Firestore database.",
+            "A web application leveraging OpenAI API to instantly convert your text captions into lively emojis. With just one click, infuse your messages, social media posts, and more with a delightful touch of fun, emotion, and personal flair.",
           projectTech: [
             "Next",
             "React",
@@ -29,7 +29,7 @@ function Project() {
           projectName: "UW BlockChain Blog",
           projectLink: "https://netlify.com",
           projectDescription:
-            "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
+            "Contributed to UW Blockchain Club's blog development, collaborating with team members to create components and optimize content delivery. Utilized ContentPlayer for seamless user experience. Ongoing project, continuously enhancing the platform.",
           projectTech: [
             "Next",
             "React",
@@ -48,7 +48,7 @@ function Project() {
           projectName: "WeatherToday",
           projectLink: "https://netlify.com",
           projectDescription:
-            "I made a Netflix copy with TMBD Api. It has infinite scrolling and lets you watch movies by genre. You can also add movies to your favorites list.",
+            "Developed a live weather check website leveraging the OpenWeather API. Users can conveniently obtain real-time weather information by inputting the city name, zip code, or area code.",
           projectTech: [
             "React",
             "Node.js",

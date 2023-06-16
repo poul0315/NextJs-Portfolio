@@ -18,13 +18,14 @@ function Hero() {
                 Paul Nam
             </h2>
             <h3 className="hero-title-large hero-title-sub">
-                I love programming.
+                Welcome to My Website!
             </h3>
             <p className="hero-text">
-                {`I&apos;m an electrical engineer with expereince in web developing
-                and embedded coding in C++. My current interest is learning new technology
-                and expand my knowledge. As I'm an electrical engineer, also interested in 
-                designing PCB and Microcontroller system.`}
+                {`Greetings! I'm an electrical engineering major with a passion for web development, 
+                particularly in the full-stack realm. Alongside my love for crafting immersive digital experiences, 
+                I am captivated by the transformative potential of AI and blockchain technologies. 
+                When I'm not immersed in coding, you'll often find me indulging in my love for gaming. 
+                Let's connect and embark on a journey of innovation and creativity together!`}
             </p>
         </div>
     )

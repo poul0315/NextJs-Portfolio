@@ -21,10 +21,7 @@ function About() {
                 I love programming.
             </h3>
             <p className="hero-text">
-                {`I&apos;m an electrical engineer with expereince in web developing
-                and embedded coding in C++. My current interest is learning new technology
-                and expand my knowledge. As I'm an electrical engineer, also interested in 
-                designing PCB and Microcontroller system.`}
+                {`Will be added`}
             </p>
         </div>
     )
