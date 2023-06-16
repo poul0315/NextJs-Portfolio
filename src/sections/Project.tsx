@@ -130,7 +130,8 @@ function Project() {
                     <li className="project-info-links-item">
                       <Link
                         href={projectExternalLinks.externalLink}
-                        className="project-info-links-item-link"
+                        className="project-info-links-item-link" 
+                        target="_blank"
                       >
                         <FiExternalLink />
                       </Link>
