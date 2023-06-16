@@ -21,7 +21,7 @@ function Project() {
           ],
           projectExternalLinks: {
             github: "",
-            externalLink: "",
+            externalLink: "https://caption2emoji.vercel.app/",
           },
         },
         {
