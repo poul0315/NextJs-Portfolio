@@ -4,6 +4,7 @@ import Hero from '@/sections/Hero'
 import About from '@/sections/About'
 import Experience from '@/sections/Experience'
 import Project from '@/sections/Project'
+import Footer from '@/sections/Footer'
 import SocialIcons from '@/components/SocialIcons'
 import Email from '@/components/Email'
 
@@ -18,6 +19,7 @@ function Index() {
         <About />
         <Experience />
         <Project />
+        <Footer />
       </div>
       <SocialIcons />
       <Email />
