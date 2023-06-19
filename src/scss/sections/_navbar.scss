@@ -103,7 +103,8 @@
     z-index: 1; // make every component under navbar
     --navbar-height: 64px;
     height: var(--navbar-height);
-    background-color: var(--navbar-bg-color);
+    // background-color: var(--navbar-bg-color);
+    background-color: var(--lightest-navy);
     left: 0;
     right: 0;
     top: 0;
@@ -142,7 +143,9 @@
   
   .navbar-link:is(:focus, :hover) {
     color: var(--navbar-text-color-focus);
-    background-color: var(--navbar-bg-contrast);
+    // background-color: var(--navbar-bg-contrast);
+    background-color: skyblue;
+
   }
   .navbar-logo {
     background-color: var(--navbar-text-color-focus);
@@ -167,10 +170,12 @@
     width: 25px;
     height: 4px;
     margin: 2px;
-    background-color: var(--navbar-text-color);
+    // background-color: var(--navbar-text-color);
+    background-color: skyblue;
   }
   #navbar-toggle:is(:focus, :hover) .icon-bar {
-    background-color: var(--navbar-text-color-focus);
+    // background-color: var(--navbar-text-color-focus);
+    background-color: skyblue;
   }
   #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
     position: absolute;
@@ -203,7 +208,8 @@
   .navbar-linkss {
     list-style: none;
     position: absolute;
-    background-color: var(--navbar-bg-color);
+    // background-color: var(--navbar-bg-color);
+    background-color: var(--lightest-navy);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,13 +220,14 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
   
-  // #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-linkss {
-  //   padding: 1em;
-  // }
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-linkss {
+    padding: 1em;
+  }
   @media screen and (min-width: 700px) {
     #navbar-toggle,
     #navbar-toggle[aria-expanded="true"] {
       display: none;
+      transition: transform 1s;
     }
   
     #navbar-menu,
@@ -230,6 +237,7 @@
       position: static;
       display: block;
       height: 100%;
+      transition: transform 1s;
     }
   
     .navbar-linkss,
@@ -241,5 +249,12 @@
       flex-direction: row;
       width: 100%;
       height: 100%;
+      transition: transform 1s;
     }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-linkss {
+    border-radius: 5px;
+  }
 }

@@ -42,7 +42,7 @@ export default function Footer() {
               <TelegramIcon className="contact__option-icon" />
               <h4>Telegram</h4>
               <h5>poul0315@gmail.com</h5>
-              <a href="https://t.me/devjongs" target="_blank" rel="noreferrer">
+              <a href="https://t.me/poul0315" target="_blank" rel="noreferrer">
                 send a message
               </a>
             </article>
