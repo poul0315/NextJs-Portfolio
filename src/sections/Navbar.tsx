@@ -32,6 +32,7 @@ function Navbar() {
         { name: "About", link: "about" },
         { name: "Experience", link: "experience" },
         { name: "Project", link: "project" },
+        { name: "Footer", link: "contact" },
     ];
 
     return (
