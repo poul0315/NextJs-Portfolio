@@ -19,7 +19,9 @@ function Index() {
         <About />
         <Experience />
         <Project />
-        <Footer />
+        <div className="footer-main">
+          <Footer />
+        </div>
       </div>
       <SocialIcons />
       <Email />
