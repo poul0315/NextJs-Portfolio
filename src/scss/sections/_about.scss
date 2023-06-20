@@ -3,15 +3,25 @@
     max-width: 1000px;
     .grid-skill {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 30% 30%;
         gap: 2rem;
+        justify-content: center;
         .skill-item {
+            display: flex;
+            flex-direction: column;
             color: white;
             background-color: transparent;
             border: 1px solid white;
             border-radius: 5px;
             text-align: center;
+            &-details {
+                display: grid;
+                grid-template-columns: 30% 30%;
+                gap: 0.4rem;
+                list-style-type: none;
+                justify-content: center;
+                color: skyblue;
+            }
         }
     }
 }
