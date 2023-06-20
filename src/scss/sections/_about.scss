@@ -1,11 +1,13 @@
 .about {
     margin: 35rem auto;
     max-width: 1000px;
+    // background-color: yellow;
     .grid-skill {
         display: grid;
         grid-template-columns: 30% 30%;
         gap: 2rem;
         justify-content: center;
+        // background-color: yellow;
         .skill-item {
             display: flex;
             flex-direction: column;
@@ -14,6 +16,7 @@
             border: 1px solid white;
             border-radius: 5px;
             text-align: center;
+            transition: all 400ms ease;
             &-details {
                 display: grid;
                 grid-template-columns: 30% 30%;
@@ -21,10 +24,37 @@
                 list-style-type: none;
                 justify-content: center;
                 color: skyblue;
+                padding: 10px;
             }
         }
     }
+
+    .skill-program-lang:hover {
+        color: black;
+        background-color: skyblue;
+        border: 1px solid ;
+        .skill-item-details {
+            color: black;
+        }
+    }
+    .skill-tech-tool:hover {
+        color: black;
+        background-color: skyblue;
+        border: 1px solid ;
+        .skill-item-details {
+            color: black;
+        }
+    }
+    .skill-lang:hover {
+        color: black;
+        background-color: skyblue;
+        border: 1px solid ;
+        .skill-item-details {
+            color: black;
+        }
+    }
 }
+
 
 /* MEDIA QUERIES (TABLE DEVICES) */
 @media screen and (max-width: 1024px) {

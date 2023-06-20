@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+
+
 function About() {
     return (
         <div className="about" id="about">
             <div className="grid-skill">
-                    <div className="skill-item">
+                    <div className="skill-item skill-program-lang">
                         <h3>Programming Language</h3>
                         <ul className="skill-item-details">
                             <li>Python</li>
@@ -18,7 +20,7 @@ function About() {
                             <li>CSS</li>
                         </ul>
                     </div>
-                    <div className="skill-item">
+                    <div className="skill-item skill-tech-tool">
                         <h3>Technologies & Tools</h3>
                         <ul className="skill-item-details">
                             <li>NextJs</li>
@@ -38,7 +40,7 @@ function About() {
                             <li>Labview</li>
                         </ul>
                     </div>
-                    <div className="skill-item">
+                    <div className="skill-item skill-lang">
                         <h3>Languages</h3>
                         <ul className="skill-item-details">
                             <li>Korean</li>
