@@ -59,6 +59,7 @@
 /* MEDIA QUERIES (TABLE DEVICES) */
 @media screen and (max-width: 1024px) {
     .about {
+        max-width: 70%;
         .grid-skill {
             grid-template-columns: 1fr;
             gap: 2rem;
