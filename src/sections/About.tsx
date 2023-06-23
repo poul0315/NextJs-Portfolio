@@ -15,13 +15,14 @@ function About() {
                             <li>Typescript</li>
                             <li>C/C++</li>
                             <li>Java</li>
+                            <li>Solidity</li>
                             <li>Arduino</li>
                             <li>HTML</li>
                             <li>CSS</li>
                         </ul>
                     </div>
                     <div className="skill-item skill-tech-tool">
-                        <h3>Technologies & Tools</h3>
+                        <h3>Framework/Libraries</h3>
                         <ul className="skill-item-details">
                             <li>NextJs</li>
                             <li>ReactJs</li>
@@ -31,13 +32,23 @@ function About() {
                             <li>Tailwind</li>
                             <li>EJS</li>
                             <li>Openai API</li>
-                            <li>Git</li>
                             <li>Heroku</li>
-                            <li>MongoDB</li>
-                            <li>Unix</li>
                             <li>OpenCV</li>
                             <li>SEAL</li>
+                        </ul>
+                    </div>
+                    <div className="skill-item skill-soft-tool">
+                        <h3>Tools/Software</h3>
+                        <ul className="skill-item-details">
+                            <li>MongoDB</li>
+                            <li>NPM</li>
+                            <li>Yarn</li>
+                            <li>Git</li>
+                            <li>Unix</li>
+                            <li>Linux</li>
                             <li>Labview</li>
+                            <li>VScode</li>
+                            <li>Figma</li>
                         </ul>
                     </div>
                     <div className="skill-item skill-lang">
