@@ -38,12 +38,10 @@ function Navbar() {
     return (
         <header id="navbar">
             <nav className="navbar-container container">
-                {/* <a href="/" className="home-link"> */}
-                    <Link activeClass="active" to="hero" spy={true} smooth={true} offset={-100} duration={500} className="home-link">
-                        <div className="navbar-logo"></div>
-                        Paul Nam
-                    </Link>
-                {/* </a> */}
+                <Link activeClass="active" to="hero" spy={true} smooth={true} offset={-100} duration={500} className="home-link">
+                    <div className="navbar-logo"></div>
+                    Paul Nam
+                </Link>
                 <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
