@@ -1,85 +1,9 @@
-// nav {
-//     min-height: 60px;
-//     .wrapper {
-//         width: 100%;
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding: 0 4rem;
-//         transition: 0.3s ease-in-out;
-//         position: absolute;
-//         .brand {
-//             a {
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 height: 3rem;
-//                 margin: 2rem 0;
-//                 width: 6rem;
-//                 fill: none;
-//                 font-family: var(--roboto);
-//                 color: var(--theme-color);
-//                 font-size: var(--tlarge);
-//                 cursor: pointer;
-//                 text-decoration: none;
-//                 transition: 0.3s ease-in-out;
-//                 &:hover {
-//                     color: var(--lightest-slate);
-//                 }
-//                 &:focus {
-//                     outline-color: var(--theme-color);
-//                     fill: #64dad91a;
-//                 }
-//             }
-//         }
-        
-//         .nav-items {
-//             display: flex;
-//             gap: 3rem;
-//             color: var(--lightest-slate);
-//             font-size: var(--tlarge);
-//             font-family: var(--roboto);
-//             &-list {
-//                 display: flex;
-//                 gap: 3rem;
-//                 list-style-type: none; // gets rid of bullet pointss
-//                 &-item {
-//                     a {
-//                         color: inherit;
-//                         text-decoration: none; // This gets rid of underline (href style)
-//                         padding: 15px;
-//                         transition: 0.3s ease-in-out;
-//                         a:focus {
-//                             outline-color: white;
-//                         }
-//                         &:hover {
-//                             color: white;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 500px) {
-//     nav li {
-//     display: block;
-//       width: 100%;
-//       border-bottom: 1px solid white;
-//       padding: 5px 0;
-      
-// }
-  
-// nav {
-//     padding: 10px 0 0 0;
-//   }
-// }
-
 :root {
     --navbar-bg-color: hsl(0, 0%, 15%);
     --navbar-text-color: hsl(0, 0%, 85%);
     --navbar-text-color-focus: white;
     --navbar-bg-contrast: hsl(0, 0%, 25%);
+    --animation-timing: 200ms ease-in-out;
   }
   * {
     box-sizing: border-box;
@@ -103,7 +27,6 @@
     z-index: 1; // make every component under navbar
     --navbar-height: 64px;
     height: var(--navbar-height);
-    // background-color: var(--navbar-bg-color);
     background-color: var(--lightest-navy);
     left: 0;
     right: 0;
@@ -170,11 +93,9 @@
     width: 25px;
     height: 4px;
     margin: 2px;
-    // background-color: var(--navbar-text-color);
     background-color: skyblue;
   }
   #navbar-toggle:is(:focus, :hover) .icon-bar {
-    // background-color: var(--navbar-text-color-focus);
     background-color: skyblue;
   }
   #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
@@ -184,12 +105,15 @@
   }
   #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
     transform: rotate(45deg);
+    transition: var(--animation-timing);
   }
   #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
     opacity: 0;
+    transition: var(--animation-timing);
   }
   #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
     transform: rotate(-45deg);
+    transition: var(--animation-timing);
   }
   #navbar-menu {
     position: fixed;
@@ -208,7 +132,6 @@
   .navbar-linkss {
     list-style: none;
     position: absolute;
-    // background-color: var(--navbar-bg-color);
     background-color: var(--lightest-navy);
     display: flex;
     flex-direction: column;
@@ -216,13 +139,9 @@
     left: 0;
     right: 0;
     margin: 1.4rem;
-    // border-radius: 5px; //this caused border rounder when about is clicked
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
   
-  // #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-linkss {
-  //   padding: 1em;
-  // }
   @media screen and (min-width: 700px) {
     #navbar-toggle,
     #navbar-toggle[aria-expanded="true"] {
@@ -238,6 +157,7 @@
       display: block;
       height: 100%;
       transition: transform 1s;
+      // transition: opacity var(--animation-timing);
     }
   
     .navbar-linkss,
@@ -250,6 +170,7 @@
       width: 100%;
       height: 100%;
       transition: transform 1s;
+      // transition: opacity var(--animation-timing);
     }
 }
 
