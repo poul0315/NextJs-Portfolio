@@ -2,7 +2,7 @@
     color: white;
     max-width: 1000px;
     gap: 1rem;
-    margin: 25rem auto;
+    margin: 22rem auto;
     .title {
         font-family: var(--roboto);
         position: relative;
@@ -138,7 +138,7 @@
           gap: 0.5rem;
           &-overline {
             color: var(--theme-color);
-            font-family: var(--fira-code);
+            font-family: var(--roboto);
           }
           &-title {
             width: max-content;
@@ -156,7 +156,7 @@
             border-radius: 0.2rem;
             p {
               color: var(--light-slate);
-              font-family: var(--raleway);
+              font-family: var(--roboto);
               padding: 2rem;
               text-align: end;
             }
@@ -168,7 +168,7 @@
             flex-wrap: wrap;
             &-item {
               color: var(--light-slate);
-              font-family: var(--raleway);
+              font-family: var(--roboto);
             }
           }
           &-links {
@@ -228,21 +228,19 @@
             background-color: rgba(31, 10, 44, 0.592);
             align-items: flex-start;
             padding: 1rem;
-  
+            &-overline {
+              color: Blue;
+            }
             &-description {
-              // background-color: transparent;
               margin-top: 15rem;
               height: 300px;
-              // padding-top: 5rem;
               p {
-                // margin-top: 10rem;
                 text-align: start;
               }
             }
           }
           &:nth-of-type(even) {
             .project-image {
-              // margin: 10rem 0;
               left: 0;
               right: initial;
             }
@@ -263,7 +261,9 @@
             background-color: rgba(31, 10, 44, 0.592);
             align-items: flex-start;
             padding: 1rem;
-  
+            &-overline {
+              color: skyblue;
+            }
             &-description {
               // background-color: transparent;
               margin-top: 15rem;
@@ -285,23 +285,6 @@
         }
       }
     }
-    // @media screen and (max-width: 680px) {
-    //   margin: 5rem 0;
-    //   &-container {
-    //     .project {
-    //       &-image {
-    //         &-container {
-    //           width: 500px;
-    //           height: 300px;
-    //         }
-    //       }
-    //       .project-info {
-    //         width: 500px;
-    //         height: 300px;
-    //       }
-    //     }
-    //   }
-    // }
     @media screen and (max-width: 600px) {
       &-container {
         .project {
@@ -314,13 +297,13 @@
           .project-info {
             width: 350px;
             height: 800px;
+            &-overline {
+              color: transparent;
+            }
             &-description {
-              // background-color: transparent;
               margin-top: 20rem;
               height: 300px;
-              // padding-top: 5rem;
               p {
-                // margin-top: 10rem;
                 text-align: start;
               }
             }

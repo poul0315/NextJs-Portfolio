@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function Experience() {
     const [selected, setSelected] = useState(0);
@@ -40,10 +41,30 @@ function Experience() {
 
     return (
         <div className="experience" id="experience">
-            <div className="title">
+            <motion.div
+                className="title"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+                variants={{
+                visible: { opacity: 1, y: -50 },
+                hidden: { opacity: 0, y: 0 },
+                }}
+            >
                 <h2>Work Experience</h2>
-            </div>
-            <div className="container">
+            </motion.div>
+            <motion.div
+                className="container"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+                variants={{
+                visible: { opacity: 1, y: -50 },
+                hidden: { opacity: 0, y: 0 },
+                }}
+            >
                 <ul className="exp-slider">
                     <div className="underline"></div>
                     {experiences.map((experience, index) => {
@@ -79,7 +100,7 @@ function Experience() {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
