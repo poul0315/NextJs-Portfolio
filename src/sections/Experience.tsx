@@ -36,6 +36,14 @@ function Experience() {
                 "Played a key role in supporting the design and integration of production line systems, facilitating streamlined and efficient manufacturing processes.",
                 "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
             ],
+        },
+        {
+            name: "UW",
+            role: "Undergraduate Researcher",
+            url: "https://www.washington.edu/",
+            positionDescription: [
+                "Coming soon!",
+            ],
         }
     ];
 
