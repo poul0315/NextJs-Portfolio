@@ -87,10 +87,9 @@ function Project() {
             projectTech,
           }) => {
             return (
-              <div>
+              <div key={projectName}>
                 <motion.div
                   className="project"
-                  key={projectName}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
