@@ -62,31 +62,32 @@ function Project() {
         },
     ];
     return (
-        <div className="projects" id="work">
-          <motion.div
-            className="title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            variants={{
-              visible: { opacity: 1, y: -50 },
-              hidden: { opacity: 0, y: 0 },
-            }}
-          >
-          <h2>Projects</h2>
-          </motion.div>
-          <div className="projects-container">
-            {projectsData.map(
-              ({
-                image,
-                projectDescription,
-                projectLink,
-                projectExternalLinks,
-                projectName,
-                projectTech,
-              }) => {
-              return (
+      <div className="projects" id="work">
+      <motion.div
+        className="title"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        variants={{
+          visible: { opacity: 1, y: -50 },
+          hidden: { opacity: 0, y: 0 },
+        }}
+      >
+        <h2>Projects</h2>
+      </motion.div>
+      <div className="projects-container">
+        {projectsData.map(
+          ({
+            image,
+            projectDescription,
+            projectLink,
+            projectExternalLinks,
+            projectName,
+            projectTech,
+          }) => {
+            return (
+              <div>
                 <motion.div
                   className="project"
                   key={projectName}
@@ -141,10 +142,11 @@ function Project() {
                     </ul>
                   </div>
                 </motion.div>
-              );
-            }
-          )}
-        </div>
+                <div className="project-line"></div>
+              </div>
+            );
+          }
+        )}
       </div>
     );
 }

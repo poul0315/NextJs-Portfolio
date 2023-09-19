@@ -5,8 +5,13 @@
 @import "_project";
 @import "footer";
 
+.app {
+    background-color: #EED7C2;
+}
+
 .main-component {
-    margin: 15rem auto;
+    margin: 10rem 5rem;
+    background-color: #EED7C2;
     // align-items: center;
     &-skill {
         padding: 0.5px;
