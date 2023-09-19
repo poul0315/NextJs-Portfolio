@@ -13,6 +13,15 @@
     margin: 10rem 5rem;
     background-color: #EED7C2;
     // align-items: center;
+    &-skill {
+        padding: 0.5px;
+        // height: 2000px;
+        background-color: var(--lightest-navy);
+    }
+    &-project {
+        padding: 0.5px;
+        background-color: var(--lightest-navy);
+    }
 }
 
 @media screen and (max-width: 600px) {

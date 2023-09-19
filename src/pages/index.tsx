@@ -15,10 +15,18 @@ function Index() {
         <Navbar />
       </div>
       <div className="main-component">
-        <Hero />
+        <div className="main-component-hero">
+          <Hero />
+        </div>
+        <div className="main-component-skill">
         <About />
-        <Experience />
+        </div>
+        <div className="main-component-experience">
+          <Experience />
+        </div>
+        <div className="main-component-project">
         <Project />
+        </div>
         <div className="footer-main">
           <Footer />
         </div>
