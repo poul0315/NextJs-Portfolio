@@ -20,7 +20,7 @@ function Project() {
             "Typescript",
           ],
           projectExternalLinks: {
-            github: "https://github.com/poul0315/Emoji-GPT",
+            github: "",
             externalLink: "https://caption2emoji.vercel.app/",
           },
         },
@@ -87,10 +87,9 @@ function Project() {
             projectTech,
           }) => {
             return (
-              <div>
+              <div key={projectName}>
                 <motion.div
                   className="project"
-                  key={projectName}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
@@ -101,11 +100,9 @@ function Project() {
                   }}
                 >
                   <div className="project-image">
-                    <Link href={projectExternalLinks.externalLink} target="_blank">
-                      <div className="project-image-overlay"></div>
-                    </Link>
+                    <div className="project-image-overlay"></div>
                     <div className="project-image-container">
-                        <Image src={image} fill alt={projectName} quality={100} className="project-image-container-image" />                 
+                      <Image src={image} fill alt={projectName} quality={100} className="project-image-container-image" />
                     </div>
                   </div>
                   <div className="project-info">
@@ -148,6 +145,7 @@ function Project() {
           }
         )}
       </div>
+    </div>
     );
 }
 
