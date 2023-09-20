@@ -200,11 +200,11 @@
                 &:hover {
                   color: var(--theme-color);
                 }
-                &:focus {
-                  outline-color: var(--theme-color);
-                  transform: translateY(-4px);
-                  color: var(--theme-color);
-                }
+                // &:focus {
+                //   outline-color: var(--theme-color);
+                //   transform: translateY(-4px);
+                //   color: var(--theme-color);
+                // }
               }
             }
           }

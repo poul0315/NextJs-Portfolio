@@ -1,11 +1,12 @@
 .experience {
-    color: white;
+    color: #112240;
     max-width: 700px;
     gap: 1rem;
     margin: 22rem auto;
     .title {
         font-family: var(--roboto);
         position: relative;
+        max-width: 100%;
         h2 {
             margin-bottom: 2rem;
             font-size: var(--tx2large);
@@ -15,9 +16,10 @@
                 position: absolute;
                 top: 20px;
                 width: 50%;
-                background-color: white;
+                background-color: #112240;
                 height: 2px;
-                margin-left: 40px; 
+                margin-top: 0.4rem;
+                margin-left: 4rem;
             }
         }
         @media screen and (max-width: 450px) {
@@ -70,6 +72,8 @@
                 vertical-align: middle;
                 cursor: pointer; // this makes indication that I clicked
                 width: 100%; 
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
                 span {
                     display: flex;
                     justify-content: center;
@@ -115,7 +119,7 @@
         }
         .exp-details {
             font-family: var(--roboto);
-            color: white;
+            color: #233554;
             &-position {
                 color: var(--lightest-slate);
                 &-company {
