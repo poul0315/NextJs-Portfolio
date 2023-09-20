@@ -19,7 +19,7 @@ function Index() {
           <Hero />
         </div>
         <div className="main-component-skill">
-        <About />
+          <About />
         </div>
         <div className="main-component-experience">
           <Experience />

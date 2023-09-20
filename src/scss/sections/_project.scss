@@ -151,10 +151,6 @@
           flex-direction: column;
           align-items: flex-end;
           gap: 0.5rem;
-          &-overline {
-            color: var(--theme-color);
-            font-family: var(--roboto);
-          }
           &-title {
             width: max-content;
             color: var(--lightest-slate);
