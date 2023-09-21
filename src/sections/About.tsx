@@ -43,7 +43,7 @@ const skillsData = [
 ];
 
 const Skill: React.FC<SkillProps> = ({ name, percentage }) => (
-    <div>
+    <div className="skill-set">
         <div className="skill-header">
             <p className="skill-name">{name}</p>
             <p className="skill-percentage">{percentage}%</p>
