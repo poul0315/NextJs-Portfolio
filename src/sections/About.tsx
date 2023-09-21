@@ -1,92 +1,90 @@
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const skillTitle = [
+interface SkillProps {
+  name: string;
+  percentage: number;
+  animationName: string;
+}
+
+const skillsData = [
     {
-        skillCategory: "Programming Language",
+      category: "Programming Language",
+      details: [
+        { name: "Python", percentage: 90 }, // Example percentage, adjust accordingly
+        { name: "JavaScript", percentage: 85 },
+        { name: "Typescript", percentage: 60 },
+        { name: "C/C++", percentage: 80 },
+        { name: "Java", percentage: 70 },
+        { name: "Arduino", percentage: 70 }, // Example percentage, adjust accordingly
+        { name: "HTML", percentage: 80 },
+        { name: "CSS", percentage: 70 }
+      ],
     },
     {
-        skillCategory: "Framework/Libraries",
+      category: "Framework/Libraries",
+      details: [
+        { name: "NextJs", percentage: 65 },
+        { name: "ReactJs", percentage: 85 },
+        { name: "FLASK", percentage: 75 },
+        { name: "Tailwind", percentage: 90 }, // Example percentage, adjust accordingly
+        { name: "OpenCV", percentage: 65 }, // Example percentage, adjust accordingly
+        { name: "SEAL", percentage: 60 } // Example percentage, adjust accordingly
+      ],
     },
     {
-        skillCategory: "Tools/Software",
+      category: "Tools/Software",
+      details: [
+        { name: "Git", percentage: 90 },
+        { name: "Unix", percentage: 85 }, // Example percentage, adjust accordingly
+        { name: "Linux", percentage: 80 },
+      ],
     },
-    {
-        skillCategory: "Language",
-    }
-]
+];
+
+const Skill: React.FC<SkillProps> = ({ name, percentage }) => (
+    <div>
+        <div className="skill-header">
+            <p className="skill-name">{name}</p>
+            <p className="skill-percentage">{percentage}%</p>
+        </div>
+        <div className="skillDiv">
+            <span className="skillBar" style={{ width: `${percentage}%` }}></span>
+        </div>
+    </div>
+);
 
 function About() {
-    return (
-        <div className="about" id="about">
-            <motion.div
-                className="grid-skill"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.9 }}
-                variants={{
-                visible: { opacity: 1, y: -50 },
-                hidden: { opacity: 0, y: 0 },
-                }}
-            >
-                <div className="skill-item skill-program-lang">
-                    <h3>Programming Language</h3>
-                    <ul className="skill-item-details">
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>Typescript</li>
-                        <li>C/C++</li>
-                        <li>Java</li>
-                        <li>Solidity</li>
-                        <li>Arduino</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div className="skill-item skill-tech-tool">
-                    <h3>Framework/Libraries</h3>
-                    <ul className="skill-item-details">
-                        <li>NextJs</li>
-                        <li>ReactJs</li>
-                        <li>NodeJs</li>
-                        <li>ExpressJs</li>
-                        <li>Bootstrap</li>
-                        <li>Tailwind</li>
-                        <li>ThreeJs</li>
-                        <li>EJS</li>
-                        <li>Openai API</li>
-                        <li>Heroku</li>
-                        <li>OpenCV</li>
-                        <li>SEAL</li>
-                    </ul>
-                </div>
-                <div className="skill-item skill-soft-tool">
-                    <h3>Tools/Software</h3>
-                    <ul className="skill-item-details">
-                        <li>MongoDB</li>
-                        <li>NPM</li>
-                        <li>Yarn</li>
-                        <li>Git</li>
-                        <li>Unix</li>
-                        <li>Linux</li>
-                        <li>Labview</li>
-                        <li>VScode</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-                <div className="skill-item skill-lang">
-                    <h3>Languages</h3>
-                    <ul className="skill-item-details">
-                        <li>Korean</li>
-                        <li>English</li>
-                        <li>Japanese</li>
-                    </ul>
-                </div>
-            </motion.div>
-        </div>
-    )
+  return (
+    <div className="about" id="about">
+      <motion.div
+        className="grid-skill"
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.9 }}
+        variants={{
+          visible: { opacity: 1, y: -50 },
+          hidden: { opacity: 0, y: 0 },
+        }}
+      >
+        {skillsData.map((skillSection) => (
+          <div key={skillSection.category} className={`skill-item skill-${skillSection.category.toLowerCase().replace(/\s+/g, '-')}`}>
+            <h3>{skillSection.category}</h3>
+            <div>
+              {skillSection.details.map((skill) => (
+                <Skill
+                  key={skill.name}
+                  name={skill.name}
+                  percentage={skill.percentage}
+                  animationName={`${skill.name.toLowerCase().replace(/\s+/g, '')}Bar`}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
 }
 
 export default About;
