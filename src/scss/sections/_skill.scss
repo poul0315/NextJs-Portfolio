@@ -1,28 +1,49 @@
 // .about {
 //     background-color: #223454;
 // }
-.skill-title {
-    font-family: var(--roboto);
-    position: relative;
-    max-width: 100%;
+.skill-about {
+    display: flex !important;
+    flex-direction: column !important;
 }
 
+.skill-title {
+    color: #EED7C1;
+    background: linear-gradient(to left, #EED7C1, #112240);
+    // text-align: right;
+    h2 {
+        font-family: var(--roboto);
+        margin-bottom: 2rem;
+        font-size: var(--tx2large);
+        font-weight: 700;
+        margin-left: 0.5rem;
+        &::after { // straight line next work experience title
+            content: "";
+            position: absolute;
+            top: 20px;
+            width: 50%;
+            background: linear-gradient(to left, #EED7C1, #112240);
+            height: 2px;
+            margin-top: 0.4rem;
+            margin-left: 3rem;
+        }
+    }
+}
 
-.skills {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 70px);
-    margin: 20px;
+.skill-section {
+    color: #A8B2D1;
 }
   
+.skill-container {
+    position: relative !important;
+}
+
 .skl {
     margin-left: 20px;
     color: yellow;
 }
   
 .sklLine {
-    position: relative;
+    // position: flex;
     bottom: 8px;
     visibility: hidden;
     padding-left: 6px;
