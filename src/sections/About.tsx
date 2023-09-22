@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 interface SkillProps {
   name: string;
   percentage: number;
-  animationName: string;
+  // animationName: string;
 }
 
 const skillsData = [
@@ -48,24 +48,27 @@ const Skill: React.FC<SkillProps> = ({ name, percentage }) => (
             <p className="skill-name">{name}</p>
             <p className="skill-percentage">{percentage}%</p>
         </div>
-        <div className="skillDiv">
+        {/* <div className="skillDiv">
             <span className="skillBar" style={{ width: `${percentage}%` }}></span>
-        </div>
+        </div> */}
     </div>
 );
 
-function About() {
+const variants = {
+  visible: { opacity: 1, y: -50 },
+  hidden: { opacity: 0, y: 0 },
+};
+
+export default function About() {
   return (
     <div className="about" id="about">
       <motion.div
-        className="grid-skill"
+        className="container"
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true }}
         transition={{ duration: 0.9 }}
-        variants={{
-          visible: { opacity: 1, y: -50 },
-          hidden: { opacity: 0, y: 0 },
-        }}
+        variants={variants}
       >
         {skillsData.map((skillSection) => (
           <div key={skillSection.category} className={`skill-item skill-${skillSection.category.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -76,7 +79,7 @@ function About() {
                   key={skill.name}
                   name={skill.name}
                   percentage={skill.percentage}
-                  animationName={`${skill.name.toLowerCase().replace(/\s+/g, '')}Bar`}
+                  // animationName={`${skill.name.toLowerCase().replace(/\s+/g, '')}Bar`}
                 />
               ))}
             </div>
@@ -84,7 +87,5 @@ function About() {
         ))}
       </motion.div>
     </div>
-  );
+  )
 }
-
-export default About;
