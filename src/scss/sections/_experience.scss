@@ -7,19 +7,22 @@
         font-family: var(--roboto);
         position: relative;
         max-width: 100%;
+        color: #112240;
+        background: linear-gradient(to right, #EED7C1, #112240);
         h2 {
             margin-bottom: 2rem;
             font-size: var(--tx2large);
             font-weight: 700;
+            margin-left: 0.5rem;
             &::after { // straight line next work experience title
                 content: "";
                 position: absolute;
                 top: 20px;
                 width: 50%;
-                background-color: #112240;
+                background: linear-gradient(to right, #EED7C1, #112240);
                 height: 2px;
                 margin-top: 0.4rem;
-                margin-left: 4rem;
+                margin-left: 3rem;
             }
         }
         @media screen and (max-width: 450px) {

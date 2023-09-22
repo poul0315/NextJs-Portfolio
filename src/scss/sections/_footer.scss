@@ -2,11 +2,11 @@
 .btn {
     width: max-content;
     display: inline-block;
-    color: white;
+    color: #223554;
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid #223554;
     transition: all 400ms ease;
 }
   
@@ -18,7 +18,7 @@
 
 .btn-primary {
     background: transparent;
-    color: white;
+    color: #223554;
 }
 
 // contact me containers
@@ -29,11 +29,11 @@
 .footer-title {
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #223554;
 }
 
 h4, h5 {
-    color: white;
+    color: #223554;
 }
 
 .container.contact__container {
@@ -47,7 +47,7 @@ h4, h5 {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    color: white;
+    color: #223554;
 }
 
 .contact__option {
@@ -55,7 +55,7 @@ h4, h5 {
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid #223554;
     transition: all 400ms ease;
 }
 
@@ -80,7 +80,7 @@ h4, h5 {
 }
 
 .contact__option h5 {
-    color: white;
+    color: #223554;
 }
 
 form {
@@ -95,8 +95,8 @@ textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: white;
-    border: 2px solid skyblue;
+    background: #EDE2D8;
+    border: 2px solid #223554;
     resize: none;
     color: black; // Text
 }

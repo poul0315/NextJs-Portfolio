@@ -1,13 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface SkillProps {
-  name: string;
-  percentage: number;
-  // animationName: string;
-}
 
-const skillsData = [
+
+export default function About() {
+  const variants = {
+    visible: { opacity: 1, y: -50 },
+    hidden: { opacity: 0, y: 0 },
+  };
+  
+  interface SkillProps {
+    name: string;
+    percentage: number;
+    animationName: string;
+  };
+
+  const skillsData = [
     {
       category: "Programming Language",
       details: [
@@ -40,52 +48,59 @@ const skillsData = [
         { name: "Linux", percentage: 80 },
       ],
     },
-];
+  ];
 
-const Skill: React.FC<SkillProps> = ({ name, percentage }) => (
-    <div className="skill-set">
-        <div className="skill-header">
-            <p className="skill-name">{name}</p>
-            <p className="skill-percentage">{percentage}%</p>
-        </div>
-        {/* <div className="skillDiv">
-            <span className="skillBar" style={{ width: `${percentage}%` }}></span>
-        </div> */}
-    </div>
-);
+  const Skill: React.FC<SkillProps> = ({ name, percentage }) => (
+      <div className="skill-set">
+          <div className="skill-header">
+              <p className="skill-name">{name}</p>
+              <p className="skill-percentage">{percentage}%</p>
+          </div>
+          <div className="skillDiv">
+              <span className="skillBar" style={{ width: `${percentage}%` }}></span>
+          </div>
+      </div>
+  );
 
-const variants = {
-  visible: { opacity: 1, y: -50 },
-  hidden: { opacity: 0, y: 0 },
-};
-
-export default function About() {
   return (
-    <div className="about" id="about">
+    <div className="flex flex-col">
       <motion.div
-        className="container"
+          className="skill-title"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1.0 }}
+          variants={{
+          visible: { opacity: 1, y: -50 },
+          hidden: { opacity: 0, y: 0 },
+          }}
+      >
+          <h2>Skills</h2>
+      </motion.div>
+      <motion.div
+        className="skill-container"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         transition={{ duration: 0.9 }}
         variants={variants}
       >
-        {skillsData.map((skillSection) => (
-          <div key={skillSection.category} className={`skill-item skill-${skillSection.category.toLowerCase().replace(/\s+/g, '-')}`}>
-            <h3>{skillSection.category}</h3>
-            <div>
-              {skillSection.details.map((skill) => (
-                <Skill
-                  key={skill.name}
-                  name={skill.name}
-                  percentage={skill.percentage}
-                  // animationName={`${skill.name.toLowerCase().replace(/\s+/g, '')}Bar`}
-                />
-              ))}
+          {skillsData.map((skillSection) => (
+            <div key={skillSection.category} className={`skill-item skill-${skillSection.category.toLowerCase().replace(/\s+/g, '-')}`}>
+              <h3 className="skill-section">{skillSection.category}</h3>
+              <div>
+                {skillSection.details.map((skill) => (
+                  <Skill
+                    key={skill.name}
+                    name={skill.name}
+                    percentage={skill.percentage}
+                    animationName={`${skill.name.toLowerCase().replace(/\s+/g, '')}Bar`}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </motion.div>
     </div>
-  )
+  );
 }

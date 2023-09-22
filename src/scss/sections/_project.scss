@@ -9,17 +9,19 @@
         font-family: var(--roboto);
         position: relative;
         margin-top: 2rem;
+        color: #EED7C1;
+        background: linear-gradient(to left, #EED7C1, #112240);
         h2 {
-            color: #112240;
+            margin-left: 0.5rem;
             margin-bottom: 2rem;
             font-size: var(--tx2large);
             font-weight: 700;
             &::after { // straight line next work experience title
                 content: "";
                 position: absolute;
-                top: 20px;
+                top: 26px;
                 width: 50%;
-                background-color: #112240;
+                background: linear-gradient(to right, #112240, #EED7C1);
                 height: 2px;
                 margin-left: 40px; 
         }
