@@ -63,7 +63,7 @@ export default function About() {
   );
 
   return (
-    <div className="flex flex-col">
+    <div className="skill-div flex flex-col">
       <motion.div
           className="skill-title"
           initial="hidden"

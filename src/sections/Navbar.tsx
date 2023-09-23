@@ -29,7 +29,7 @@ function Navbar() {
 
 
     const sectionLinks = [
-        { name: "Skill", link: "about" },
+        { name: "Skill", link: "skill-div" },
         { name: "Experience", link: "experience" },
         { name: "Project", link: "project" },
         { name: "Footer", link: "contact" },
@@ -39,7 +39,7 @@ function Navbar() {
         <header id="navbar">
             <nav className="navbar-container container">
                 <Link activeClass="active" to="hero" spy={true} smooth={true} offset={-100} duration={500} className="home-link">
-                    <div className="navbar-logo"></div>
+                    {/* <div className="navbar-logo"></div> */}
                     Paul Nam
                 </Link>
                 <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">

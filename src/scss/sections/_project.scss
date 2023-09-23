@@ -11,6 +11,8 @@
         margin-top: 2rem;
         color: #EED7C1;
         background: linear-gradient(to left, #EED7C1, #112240);
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.2rem;
         h2 {
             margin-left: 0.5rem;
             margin-bottom: 2rem;
@@ -20,7 +22,7 @@
                 content: "";
                 position: absolute;
                 top: 26px;
-                width: 50%;
+                width: 70%;
                 background: linear-gradient(to right, #112240, #EED7C1);
                 height: 2px;
                 margin-left: 40px; 
