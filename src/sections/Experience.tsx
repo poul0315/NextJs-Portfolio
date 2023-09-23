@@ -120,6 +120,7 @@ function Experience() {
                     </div>
                 </div>
             </motion.div>
+            {/* Will add accordion function to hero area */}
             {/* <ExperienceDetail /> */}
         </div>
     );
