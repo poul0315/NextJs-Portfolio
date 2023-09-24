@@ -35,13 +35,13 @@
           font-size: var(--tx2large);
           font-weight: 700;
           &::after { // straight line next work experience title
-              content: "";
-              position: absolute;
-              top: 20px;
-              width: 50%;
-              background-color: #112240;
-              height: 2px;
-              margin-left: 40px; 
+            content: "";
+            position: absolute;
+            top: 26px;
+            width: 70%;
+            background: linear-gradient(to right, #112240, #EED7C1);
+            height: 2px;
+            margin-left: 40px; 
           }
       }
     }
@@ -52,13 +52,13 @@
             font-size: var(--tx2large);
             font-weight: 700;
             &::after { // straight line next work experience title
-                content: "";
-                position: absolute;
-                top: 20px;
-                width: 50%;
-                background-color: white;
-                height: 2px;
-                margin-left: 40px; 
+              content: "";
+              position: absolute;
+              top: 26px;
+              width: 70%;
+              background: linear-gradient(to right, #112240, #EED7C1);
+              height: 2px;
+              margin-left: 40px; 
             }
         }
     }
@@ -69,13 +69,13 @@
           font-size: var(--tx2large);
           font-weight: 700;
           &::after { // straight line next work experience title
-              content: "";
-              position: absolute;
-              top: 20px;
-              width: 50%;
-              background-color: white;
-              height: 2px;
-              margin-left: 40px; 
+            content: "";
+            position: absolute;
+            top: 26px;
+            width: 70%;
+            background: linear-gradient(to right, #112240, #EED7C1);
+            height: 2px;
+            margin-left: 40px; 
           }
       }
     }
