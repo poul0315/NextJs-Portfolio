@@ -129,7 +129,7 @@ function Experience() {
                             )}
                             <span className="exp-details-page">
                                 <Link href={`/experiences/${experiences[selected].link}`}>
-                                    <p >Click Here to more details</p>
+                                    <p >Click here for more details</p>
                                 </Link>
                             </span>
                         </ul>
