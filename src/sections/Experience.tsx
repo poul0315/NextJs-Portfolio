@@ -45,6 +45,12 @@ export const experiences = [
 function Experience() {
     const [selected, setSelected] = useState(0);
 
+    const [isSlidingOut, setIsSlidingOut] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsSlidingOut(prevState => !prevState); // toggle the state
+    }
+
     useEffect(() => {
         const transformSelected = () => {
             const underline = document.querySelector<HTMLElement>(".underline");
@@ -79,7 +85,8 @@ function Experience() {
                 hidden: { opacity: 0, y: 0 },
                 }}
             >
-                <ul className="exp-slider">
+                {/* <ul className="exp-slider">
+                    <div>button</div>
                     <div className="underline"></div>
                     {experiences.map((experience, index) => {
                         return (
@@ -90,6 +97,19 @@ function Experience() {
                             >  
                             <span>{experience.name}</span>
                           </li>
+                        );
+                    })}
+                </ul> */}
+                <button onClick={handleButtonClick}>{">"}</button>
+                <ul className={`exp-slider ${isSlidingOut ? 'slide-out' : ''}`}>
+                    <div className="underline"></div>
+                    {experiences.map((experience, index) => {
+                        return (
+                            <li key={index} className={`exp-slider-item ${index === selected && "exp-slider-item-selected"}`}
+                                onClick={() => setSelected(index)}
+                            >
+                                <span>{experience.name}</span>
+                            </li>
                         );
                     })}
                 </ul>
