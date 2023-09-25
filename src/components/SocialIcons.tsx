@@ -13,22 +13,22 @@ function SocialIcons() {
         { 
             name: "Github", 
             icon: <FiGithub />, 
-            link: "http://www.github.com"
+            link: "http://www.github.com/poul0315"
         },
         { 
             name: "Youtube", 
             icon: <FiYoutube />, 
-            link: "http://www.youtube.com"
+            link: "https://www.youtube.com/@namu7546/featured"
         },
         { 
             name: "Instagram", 
             icon: <FiInstagram />, 
-            link: "http://www.instagram.com"
+            link: "https://www.instagram.com/paul_nam1/"
         },
         { 
             name: "Linkedin", 
             icon: <FiLinkedin />, 
-            link: "http://www.linkedin.com"
+            link: "https://www.linkedin.com/in/paul-nam-27b815210/"
         },
         { 
             name: "Twitter", 
