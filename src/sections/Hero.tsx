@@ -5,6 +5,7 @@ function Hero() {
     return (
         <div className="hero">
             <Image 
+                priority
                 src="/profile-picture.png" 
                 className="hero-profile-image"
                 width={200}
