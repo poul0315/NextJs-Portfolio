@@ -173,7 +173,7 @@
             p {
               color: var(--light-slate);
               font-family: var(--roboto);
-              padding: 2rem;
+              padding: 1rem;
               text-align: end;
             }
           }
@@ -336,7 +336,7 @@
             flex-direction: column;
             width: 350px;
             height: auto;
-            padding: 1rem;
+            // padding: 1rem;
             &-overline {
               color: transparent;
             }
