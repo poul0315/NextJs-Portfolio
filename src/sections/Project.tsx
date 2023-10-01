@@ -108,6 +108,7 @@ function Project() {
                     <div className="project-info">
                       <h3 className="project-info-title">{projectName}</h3>
                       <div className="project-info-description">
+                        <h3 className="project-info-description-title">{projectName}</h3>
                         <p>{projectDescription}</p>
                       </div>
                       <ul className="project-info-tech-list">
