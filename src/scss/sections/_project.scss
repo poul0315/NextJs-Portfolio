@@ -108,6 +108,7 @@
         display: flex;
         justify-content: flex-end;
         padding: 1rem;
+        margin-top: 5rem;
         &-line {
           position: absolute;
           left: 50%; // This will move the left border of the line to the center of the .project
@@ -230,6 +231,17 @@
         }
       }
     }
+    @media (min-width: 1101px) {
+      &-container {
+        .project-info {
+          &-description {
+            &-title {
+              display: none;
+            }
+          }
+        }
+      }
+    }
     @media screen and (max-width: 1100px) {
       &-container {
         align-items: center;
@@ -237,12 +249,18 @@
           position: flex;
           flex-direction: column;
           justify-content: flex-start;
+          .project-image-container {
+            margin-left: 1rem;
+          }
           .project-info {
             width: 600px;
             height: 600px;
-            background-color: rgba(31, 10, 44, 0.592);
+            // background-color: rgba(31, 10, 44, 0.592);
             align-items: flex-start;
             padding: 1rem;
+            &-title {
+              visibility: hidden;
+            }
             &-overline {
               color: Blue;
             }
@@ -251,6 +269,10 @@
               height: 300px;
               p {
                 text-align: start;
+              }
+              &-title {
+                margin-left: 2rem;
+                margin-top: 1rem;
               }
             }
           }
@@ -273,7 +295,7 @@
           .project-info {
             width: 600px;
             height: 600px;
-            background-color: rgba(31, 10, 44, 0.592);
+            // background-color: rgba(31, 10, 44, 0.592);
             align-items: flex-start;
             padding: 1rem;
             &-overline {
@@ -310,15 +332,20 @@
             }
           }
           .project-info {
+            display: flex;
+            flex-direction: column;
             width: 350px;
             height: auto;
+            padding: 1rem;
             &-overline {
               color: transparent;
             }
             &-description {
+              background-color: #112240;
               margin-top: 20rem;
               height: 300px;
               p {
+                // background-color: #112240;
                 text-align: start;
               }
             }
