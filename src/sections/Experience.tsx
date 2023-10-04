@@ -6,18 +6,6 @@ import ExperienceDetail from "../pages/experiences/[slug]";
 
 export const experiences = [
     {
-        name: "Qualitel",
-        role: "Electrical Test Engineer",
-        url: "https://qualitel.com/",
-        positionDescription: [
-            "Collaborated with a senior engineer to develop a LabView test fixture program, referring to Python3 code.",
-            "Designed test framework components, such as the user interface, process models, and step types.",
-            "Created test sequences within the established framework.",
-            "Troubleshot and resolved issues encountered during the execution of tests in a production environment."
-        ],
-        link: "job-one"
-    },
-    {
         name: "Paccar",
         role: "Electrical Design Engineer",
         url: "https://paccar.com/",
@@ -28,6 +16,18 @@ export const experiences = [
             "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
         ],
         link: "job-two"
+    },
+    {
+        name: "Qualitel",
+        role: "Electrical Test Engineer",
+        url: "https://qualitel.com/",
+        positionDescription: [
+            "Collaborated with a senior engineer to develop a LabView test fixture program, referring to Python3 code.",
+            "Designed test framework components, such as the user interface, process models, and step types.",
+            "Created test sequences within the established framework.",
+            "Troubleshot and resolved issues encountered during the execution of tests in a production environment."
+        ],
+        link: "job-one"
     },
     {
         name: "UW",
