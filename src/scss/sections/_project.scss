@@ -144,7 +144,7 @@
           }
           img {
             z-index: 0;
-            filter: grayscale(100%);
+            // filter: grayscale(100%);
             transition: 0.3s ease-in-out;
           }
         }
@@ -174,7 +174,6 @@
               color: var(--light-slate);
               font-family: var(--roboto);
               padding: 1rem;
-              text-align: end;
             }
           }
           &-tech-list {
@@ -199,17 +198,36 @@
               align-items: center;
               &-link {
                 padding: 10px;
-                color: var(--lightest-slate);
+                color: white;
                 transition: 0.3s ease-in-out;
                 outline: 2px dashed transparent;
                 &:hover {
                   color: var(--theme-color);
                 }
-                // &:focus {
-                //   outline-color: var(--theme-color);
-                //   transform: translateY(-4px);
-                //   color: var(--theme-color);
-                // }
+              }
+              &-message {
+                position: relative;  /* Make this a positioning context */
+                color: gray;
+                left: -10px;
+              }
+              &-message:hover {
+                position: relative;  /* Make this a positioning context */
+                color: black;
+              }
+              &-message p {
+                display: none; /* Start with the message hidden */
+                position: absolute;  /* Absolute position relative to the parent .project-info-links-item-message */            
+                left: -3rem;
+                color: white;
+                // background: #f2f2f2;  /* Optional: a background to make it readable */
+                border: 1px solid #ccc;  /* Optional: a border for visibility */
+                padding: 2px 5px;  /* Optional: some padding for aesthetics */
+                font-size: 12px;   /* Adjust as necessary */
+                border-radius: 4px; /* Optional: rounded corners */
+                white-space: nowrap; /* Prevent the message from breaking into multiple lines */    /* Adjust as necessary */
+              }
+              &-message:hover p {
+                display: block;  /* Show the message on hover */
               }
             }
           }
@@ -231,6 +249,7 @@
         }
       }
     }
+    // This is to stop anything below 1100px
     @media (min-width: 1101px) {
       &-container {
         .project-info {
@@ -238,6 +257,9 @@
             &-title {
               display: none;
             }
+          }
+          &-tech-list {
+            margin-left: 7rem;
           }
         }
       }
