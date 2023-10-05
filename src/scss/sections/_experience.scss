@@ -85,21 +85,32 @@
     .container {
         display: flex;
         align-items: flex-start;
-        width: 100%;
+
         .slider-button {
+            display: flex;
+            width: 20px;
             z-index: 10;
             background: none;
             border: none;
-            margin-top: 0.33rem;
-            margin-right: 0.6rem;
+            margin: 0.33rem 0.5rem;
+
+            @media screen and (max-width: 450px) {
+                display: flex;
+                width: 25px;
+                margin: 0.33rem 0 0 0;
+            }
+            &-icon {
+                @media screen and (max-width: 450px) {
+                    display: flex;
+                    margin-left: 0.5rem;
+                }
+            }
         }
         .exp-slider {
             width: 200px;
-            overflow: hidden;  /* Prevent content from spilling out. */
             transition: 
                 width 1s,        /* Transition for width */
-                visibility 0s 0.3s; 
-            margin-right: 1rem;
+                visibility 0s 0.2s; 
 
             &.slide-out {
                 width: 0; // set width to 0
@@ -117,6 +128,7 @@
                 height: 2.5rem;
                 width: 2px;
                 margin-left: 5.5rem;
+                
             }
             &::before {
                 position: absolute;
@@ -154,13 +166,15 @@
                 }
             }
             @media screen and (max-width: 450px) {
-                &-item {
+                &-item, &-item-selected {
+                    box-sizing: border-box;
                     height: 2.5rem;
-                    padding: 0 0.7rem;
-                    display: flex;
-                    vertical-align: middle;
-                    cursor: pointer; // this makes indication that I clicked
-                    width: 100%; 
+                    cursor: pointer;
+                    width: 89px;
+                    overflow: hidden;  /* Hide excess content */
+                    white-space: nowrap;  /* Prevent text wrap */
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
                     span {
                         display: flex;
                         justify-content: center;
@@ -169,9 +183,9 @@
                         font-family: var(--roboto);
                     }
                     &:hover {
-                        background-color: transparent;
+                        background-color: white;
                         span {
-                            color: white;
+                            color: black;
                         }
                     }
                 }
@@ -189,10 +203,12 @@
                 @media screen and (max-width: 400px) {
                     margin-left: 1rem;
                 }
+                @media screen and (max-width: 450px) {
+                    margin-left: 0.5rem;
+                }
             }
             &-list {
                 display: flex;
-                width: 38rem;
                 flex-direction: column;
                 gap: 1rem;
                 margin-top: 1rem;
