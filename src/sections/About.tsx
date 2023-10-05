@@ -19,25 +19,19 @@ export default function About() {
     {
       category: "Programming Language",
       details: [
-        { name: "Python", percentage: 90 }, // Example percentage, adjust accordingly
-        { name: "JavaScript", percentage: 85 },
-        { name: "Typescript", percentage: 60 },
-        { name: "C/C++", percentage: 80 },
+        { name: "Python", percentage: 75 }, // Example percentage, adjust accordingly
+        { name: "JavaScript", percentage: 70 },
+        { name: "C/C++", percentage: 65 },
         { name: "Java", percentage: 70 },
-        { name: "Arduino", percentage: 70 }, // Example percentage, adjust accordingly
-        { name: "HTML", percentage: 80 },
-        { name: "CSS", percentage: 70 }
       ],
     },
     {
       category: "Framework/Libraries",
       details: [
-        { name: "NextJs", percentage: 65 },
         { name: "ReactJs", percentage: 85 },
-        { name: "FLASK", percentage: 75 },
+        { name: "NextJs", percentage: 65 },
+        { name: "Flask", percentage: 75 },
         { name: "Tailwind", percentage: 90 }, // Example percentage, adjust accordingly
-        { name: "OpenCV", percentage: 65 }, // Example percentage, adjust accordingly
-        { name: "SEAL", percentage: 60 } // Example percentage, adjust accordingly
       ],
     },
     {

@@ -41,7 +41,6 @@ export default function Footer() {
             <article className="contact__option">
               <TelegramIcon className="contact__option-icon" />
               <h4>Telegram</h4>
-              <h5>poul0315@gmail.com</h5>
               <a href="https://t.me/poul0315" target="_blank" rel="noreferrer">
                 send a message
               </a>
@@ -49,7 +48,6 @@ export default function Footer() {
             <article className="contact__option">
               <LinkedInIcon className="contact__option-icon" />
               <h4>LinkedIn</h4>
-              <h5>poul0315@gmail.com</h5>
               <a
                 href="https://www.linkedin.com/in/paul-nam-27b815210/"
                 target="_blank"
