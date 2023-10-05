@@ -6,14 +6,26 @@ import ExperienceDetail from "../pages/experiences/[slug]";
 
 export const experiences = [
     {
-        name: "Qualit",
+        name: "Paccar",
+        role: "Electrical Design Engineer",
+        url: "https://paccar.com/",
+        positionDescription: [
+            "Conducted comprehensive reviews and seamlessly integrated systems for a range of heavy-duty trucks, ensuring optimal performance and functionality.",
+            "Utilized technical expertise to design bespoke electrical harness systems tailored to precise customer requirements, demonstrating a meticulous attention to detail.",
+            "Played a key role in supporting the design and integration of production line systems, facilitating streamlined and efficient manufacturing processes.",
+            "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
+        ],
+        link: "job-two"
+    },
+    {
+        name: "Qualitel",
         role: "Electrical Test Engineer",
         url: "https://qualitel.com/",
         positionDescription: [
-            "Collaborated with a senior engineer to develop a LabView test fixture program, referring to Python3 code. asd asd asdasdas dsad asd asd asd sdqdqs dq dqs dqsd sqdsq dq dqd qd sqd q dq dqsd qd.",
-            "Designed test framework components, such as the user interface, process models, and step types.",
-            "Created test sequences within the established framework.",
-            "Troubleshot and resolved issues encountered during the execution of tests in a production environment."
+            "Spearheaded and directed troubleshooting initiatives on a pivotal production line, a decisive effort that directly contributed to the realization and protection of over $2M+ in vital revenue for the organization.",
+            "Collaborated on building test fixture for medical device utilizing Labview by referencing Python3 scripts.",
+            "Documented comprehensive test procedures for our test fixtures, further extending support to over three assembly lines, ensuring that projects consistently met timelines and quality benchmarks.",
+            "Demonstrated proficiency and expertise in a range of six key areas: deep understanding of Python3, exemplary client communication strategies, adeptness in PCB troubleshooting, mastery in automation test fixtures, and more.",
         ],
         link: "job-one"
     },
@@ -27,18 +39,6 @@ export const experiences = [
             "Leverage knowledge in C++, OpenCV, SEAL, Unix environment, and Verilog to automate test execution.",
         ],
         link: "job-three"
-    },
-    {
-        name: "Paccar",
-        role: "Electrical Design Engineer",
-        url: "https://paccar.com/",
-        positionDescription: [
-            "Conducted comprehensive reviews and seamlessly integrated systems for a range of heavy-duty trucks, ensuring optimal performance and functionality.",
-            "Utilized technical expertise to design bespoke electrical harness systems tailored to precise customer requirements, demonstrating a meticulous attention to detail.",
-            "Played a key role in supporting the design and integration of production line systems, facilitating streamlined and efficient manufacturing processes.",
-            "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
-        ],
-        link: "job-two"
     },
 ];
 

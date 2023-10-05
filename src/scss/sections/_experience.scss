@@ -108,11 +108,10 @@
         }
         .exp-slider {
             width: 200px;
-            transition: 
-                width 1s,        /* Transition for width */
-                visibility 0s 0.2s; 
+            transition: width 1s; 
 
             &.slide-out {
+
                 width: 0; // set width to 0
                 visibility: hidden;
             }
@@ -128,7 +127,6 @@
                 height: 2.5rem;
                 width: 2px;
                 margin-left: 5.5rem;
-                
             }
             &::before {
                 position: absolute;
