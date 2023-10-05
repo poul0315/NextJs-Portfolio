@@ -1,6 +1,6 @@
 .experience {
     color: #112240;
-    max-width: 700px;
+    max-width: 800px;
     gap: 1rem;
     margin: 22rem auto;
     .title {
@@ -85,16 +85,18 @@
     .container {
         display: flex;
         align-items: flex-start;
+        width: 100%;
         .slider-button {
+            z-index: 10;
             background: none;
             border: none;
             margin-top: 0.33rem;
-            margin-right: 0.1rem;
+            margin-right: 0.6rem;
         }
         .exp-slider {
             max-width: 100%;
             transition: transform 0.5s ease-out, opacity 0.5s ease-out, visibility 0.3s ease-out;
-           
+            margin-right: 1rem;
             &.slide-out {
                 width: 0; // set width to 0
                 opacity: 0;
@@ -109,11 +111,13 @@
                 left: -0.5px;
                 top: 0;
                 height: 2.5rem;
-                width: 3px;
+                width: 2px;
                 transition: 0.3s ease-in-out;
+                margin-left: 5.5rem;
             }
             &::before {
                 position: absolute;
+                margin-left: 5.5rem;
                 left: 0px;
                 content: "";
                 height: 100%;
@@ -122,13 +126,13 @@
             }
             &-item {
                 height: 2.5rem;
-                padding: 0 1.5rem;
+                padding: 0 1.0rem;
                 display: flex;
                 vertical-align: middle;
                 cursor: pointer; // this makes indication that I clicked
                 width: 100%; 
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
                 span {
                     display: flex;
                     justify-content: center;
