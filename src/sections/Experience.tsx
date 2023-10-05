@@ -6,19 +6,7 @@ import ExperienceDetail from "../pages/experiences/[slug]";
 
 export const experiences = [
     {
-        name: "Paccar",
-        role: "Electrical Design Engineer",
-        url: "https://paccar.com/",
-        positionDescription: [
-            "Conducted comprehensive reviews and seamlessly integrated systems for a range of heavy-duty trucks, ensuring optimal performance and functionality.",
-            "Utilized technical expertise to design bespoke electrical harness systems tailored to precise customer requirements, demonstrating a meticulous attention to detail.",
-            "Played a key role in supporting the design and integration of production line systems, facilitating streamlined and efficient manufacturing processes.",
-            "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
-        ],
-        link: "job-two"
-    },
-    {
-        name: "Qualitel",
+        name: "Qualit",
         role: "Electrical Test Engineer",
         url: "https://qualitel.com/",
         positionDescription: [
@@ -39,7 +27,19 @@ export const experiences = [
             "Leverage knowledge in C++, OpenCV, SEAL, Unix environment, and Verilog to automate test execution.",
         ],
         link: "job-three"
-    }
+    },
+    {
+        name: "Paccar",
+        role: "Electrical Design Engineer",
+        url: "https://paccar.com/",
+        positionDescription: [
+            "Conducted comprehensive reviews and seamlessly integrated systems for a range of heavy-duty trucks, ensuring optimal performance and functionality.",
+            "Utilized technical expertise to design bespoke electrical harness systems tailored to precise customer requirements, demonstrating a meticulous attention to detail.",
+            "Played a key role in supporting the design and integration of production line systems, facilitating streamlined and efficient manufacturing processes.",
+            "Successfully managed engine and safety systems engineering projects, overseeing their seamless transition into the production line and contributing to their successful implementation.",
+        ],
+        link: "job-two"
+    },
 ];
 
 function Experience() {
