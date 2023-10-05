@@ -99,7 +99,7 @@
             margin-right: 1rem;
             &.slide-out {
                 width: 0; // set width to 0
-                opacity: 0;
+                visibility: hidden;
             }
             
             list-style-type: none;
