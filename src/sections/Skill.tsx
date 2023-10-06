@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 
 
-export default function About() {
+export default function SKill() {
   const variants = {
     visible: { opacity: 1, y: -50 },
     hidden: { opacity: 0, y: 0 },

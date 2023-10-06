@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '@/sections/Navbar'
 import Hero from '@/sections/Hero'
-import About from '@/sections/About'
+import Skill from '@/sections/Skill'
 import Experience from '@/sections/Experience'
 import Project from '@/sections/Project'
 import Footer from '@/sections/Footer'
@@ -19,7 +19,7 @@ function Index() {
           <Hero />
         </div>
         <div className="main-component-skill">
-          <About />
+          <Skill />
         </div>
         <div className="main-component-experience">
           <Experience />
