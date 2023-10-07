@@ -15,7 +15,7 @@ function Hero() {
                 />
                 <div className="hero-group-name">
                     <h1 className="hero-group-name-title">
-                        Hi my name is
+                        Hello My Name Is
                     </h1>
                     <h2 className="hero-group-name-title-large">
                         Paul Nam
@@ -27,7 +27,7 @@ function Hero() {
             </h3>
             <p className="hero-text">
                 {
-                    `Greetings! I'm an electrical engineering major with a passion for web development, 
+                    `I'm a professional electrical engineer with a passion for web development, 
                     particularly in the full-stack realm. Alongside my love for crafting immersive digital experiences, 
                     I am captivated by the transformative potential of AI and blockchain technologies. 
                     When I'm not immersed in coding, you'll often find me indulging in my love for gaming. 
