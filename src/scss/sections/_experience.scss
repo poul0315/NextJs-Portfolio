@@ -112,11 +112,18 @@
         .exp-slider {
             width: 200px;
             transition: width 1s; 
+            overflow:hidden;
+            @media screen and (max-width: 450px) {
+                overflow: visible;
+            }
 
             &.slide-out {
-
                 width: 0; // set width to 0
                 visibility: hidden;
+                overflow: hidden;
+                @media screen and (max-width: 450px) {
+                    overflow: visible;
+                }
             }
             
             list-style-type: none;
