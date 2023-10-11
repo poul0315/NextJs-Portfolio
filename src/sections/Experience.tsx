@@ -34,9 +34,10 @@ export const experiences = [
         role: "Undergraduate Researcher",
         url: "https://www.washington.edu/",
         positionDescription: [
-            "Developed an IoT application that applies homomorphic encryption to multi-level image thresholding using C++, OpenCV, Microsoft Simple Encrypted Arithmetic Library (SEAL) in UNIX environment",
-            "Proposed a small circuit depth multi-level thresholding algorithm in the homomorphic encryption domain.",
-            "Leverage knowledge in C++, OpenCV, SEAL, Unix environment, and Verilog to automate test execution.",
+            "Contributed to research that culminated in an IEEE publication, emphasizing the application of homomorphic encryption for IoT image processing.",
+            "Developed an IoT application employing homomorphic encryption to secure 512x512 pixel data. Utilized C++, OpenCV, and Microsoft SEAL, achieving optimal PSNR and performance benchmarks.",
+            "Implemented New Comparison Method from Seoul National University, transforming pixel values to -1 to 1, optimizing multi-level thresholding in Microsoft SEAL's homomorphic encryption.",
+            "Utilized 5 main tools: C++, OpenCV, SEAL, Unix environment, and Verilog to automate test execution.",
         ],
         link: "job-three"
     },
@@ -86,7 +87,7 @@ function Experience() {
                 }}
             >
                 <ul className={`exp-slider ${isSlidingOut ? 'slide-out' : ''}`}>
-                    <div className="underline"></div>
+                    <div className="underline" style={{ backgroundColor : isSlidingOut ? "transparent" : ""}}></div>
                     {experiences.map((experience, index) => {
                         return (
                             <li key={index} className={`exp-slider-item ${index === selected && "exp-slider-item-selected"}`}
