@@ -41,6 +41,15 @@ export const experiences = [
         ],
         link: "job-three"
     },
+    {
+        name: "Layrd",
+        role: "Co-Founder & Full-stack Developer",
+        url: "https://www.layrd.xyz/",
+        positionDescription: [
+            "It's coming soon!",
+        ],
+        link: "job-three"
+    },
 ];
 
 function Experience() {
@@ -87,7 +96,7 @@ function Experience() {
                 }}
             >
                 <ul className={`exp-slider ${isSlidingOut ? 'slide-out' : ''}`}>
-                    <div className="underline" style={{ backgroundColor : isSlidingOut ? "transparent" : ""}}></div>
+                    <div className="underline" style={{ backgroundColor : isSlidingOut ? "transparent" : "#9d00ff"}}></div>
                     {experiences.map((experience, index) => {
                         return (
                             <li key={index} className={`exp-slider-item ${index === selected && "exp-slider-item-selected"}`}
@@ -116,7 +125,7 @@ function Experience() {
                             <span>{experiences[selected].role}</span>
                             <span className="exp-details-position-company">
                                 &nbsp;@&nbsp;
-                                <Link className="link exp-details-position-company" href={experiences[selected].url}>
+                                <Link className="link exp-details-position-company" href={experiences[selected].url} target="_blank" >
                                     {experiences[selected].name}{""}
                                 </Link>
                             </span>
@@ -129,7 +138,7 @@ function Experience() {
                                 )
                             )}
                             <span className="exp-details-page">
-                                <Link href={`/experiences/${experiences[selected].link}`}>
+                                <Link href={`/experiences/${experiences[selected].link}`} target="_blank">
                                     <p >Click here for more details</p>
                                 </Link>
                             </span>
