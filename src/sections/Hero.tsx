@@ -6,11 +6,12 @@ function Hero() {
         <div className="hero">
             <div className="hero-group">
                 <Image 
-                    priority
+                    // priority
                     src="/profile-picture.png" 
                     className="hero-group-profile-image"
-                    width={200}
-                    height={200}
+                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 220px"
+                    width={220}
+                    height={220}
                     alt="picture of Paul"
                 />
                 <div className="hero-group-name">
