@@ -225,6 +225,9 @@
                 font-size: 12px;   /* Adjust as necessary */
                 border-radius: 4px; /* Optional: rounded corners */
                 white-space: nowrap; /* Prevent the message from breaking into multiple lines */    /* Adjust as necessary */
+                @media screen and (max-width: 490px) {
+                  left: 0.1rem;
+                }
               }
               &-message:hover p {
                 display: block;  /* Show the message on hover */
