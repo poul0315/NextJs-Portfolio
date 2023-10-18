@@ -46,7 +46,10 @@ export const experiences = [
         role: "Co-Founder & Full-stack Developer",
         url: "https://www.layrd.xyz/",
         positionDescription: [
-            "It's coming soon!",
+            "Architected and deployed a responsive website using React, JavaScript, and Tailwind CSS with an optimized load time of under 3 seconds by following agile methodology.",
+            "Integrated 4+ CRUD-based API endpoints by continually coordinating with a backend developer.",
+            "Supported the building of database models and deployed the server and database to EC2 and RDS.",
+            "Expanded expertise in 7 key areas: Full-stack dev, Git, React, JavaScript, Tailwind CSS, and debugging using Chrome Developer Tools.",
         ],
         link: "job-three"
     },
